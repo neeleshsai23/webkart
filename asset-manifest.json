@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/webkart/static/css/main.9d994a53.chunk.css",
+    "main.js": "/webkart/static/js/main.1b3a56f2.chunk.js",
+    "main.js.map": "/webkart/static/js/main.1b3a56f2.chunk.js.map",
+    "runtime-main.js": "/webkart/static/js/runtime-main.9862ce87.js",
+    "runtime-main.js.map": "/webkart/static/js/runtime-main.9862ce87.js.map",
+    "static/js/2.e09791c5.chunk.js": "/webkart/static/js/2.e09791c5.chunk.js",
+    "static/js/2.e09791c5.chunk.js.map": "/webkart/static/js/2.e09791c5.chunk.js.map",
+    "index.html": "/webkart/index.html",
+    "precache-manifest.501c0cc15a407179b0e86d9d13bacffb.js": "/webkart/precache-manifest.501c0cc15a407179b0e86d9d13bacffb.js",
+    "service-worker.js": "/webkart/service-worker.js",
+    "static/css/main.9d994a53.chunk.css.map": "/webkart/static/css/main.9d994a53.chunk.css.map",
+    "static/js/2.e09791c5.chunk.js.LICENSE.txt": "/webkart/static/js/2.e09791c5.chunk.js.LICENSE.txt",
+    "static/media/iphone11.png": "/webkart/static/media/iphone11.ad933bb1.png",
+    "static/media/oppoa12.jpg": "/webkart/static/media/oppoa12.d1b3fae2.jpg",
+    "static/media/oppof11.jpg": "/webkart/static/media/oppof11.d9c3307e.jpg",
+    "static/media/realme5pro.jpg": "/webkart/static/media/realme5pro.08f39c93.jpg",
+    "static/media/redmi8a.jpg": "/webkart/static/media/redmi8a.a84b6d4a.jpg",
+    "static/media/redminote9pro.jpg": "/webkart/static/media/redminote9pro.ccb8f606.jpg",
+    "static/media/s10.jpg": "/webkart/static/media/s10.5d97e99d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9862ce87.js",
+    "static/js/2.e09791c5.chunk.js",
+    "static/css/main.9d994a53.chunk.css",
+    "static/js/main.1b3a56f2.chunk.js"
+  ]
+}
