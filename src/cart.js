@@ -33,7 +33,7 @@ class Cart extends Component {
           </button>
         </div>
         <div className='cartitems'>
-          {this.props.mobiles.cart.map((item, index) => (
+          {this.props.cart.cartItems.map((item, index) => (
             <div className='cartdivs'>
               <img className='cartimgs' src={item.image} />
               <div className='detailsdiv'>
@@ -71,6 +71,8 @@ class Cart extends Component {
 const mapStateToProps = (state) => {
   return {
     mobiles: state.mobiles,
+    laptops: state.laptops,
+    cart: state.cart,
   };
 };
 

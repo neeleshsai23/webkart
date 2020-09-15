@@ -5,10 +5,14 @@ import {
   DEC_QUANTITY,
 } from './actionTypes';
 
-export const addToCart = (id) => {
+export const addToCart = (item) => {
   return {
     type: ADD_TO_CART,
-    id,
+    name: item.name,
+    price: item.price,
+    image: item.image,
+    id: item.id,
+    quantity: item.quantity,
   };
 };
 

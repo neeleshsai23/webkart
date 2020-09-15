@@ -72,53 +72,6 @@ const mobileState = {
 
 const mobileReducer = (state = mobileState, action) => {
   switch (action.type) {
-    case ADD_TO_CART:
-      if (state.id.includes(action.id)) {
-        return state;
-      } else {
-        state.totalItems += 1;
-        return {
-          ...state,
-          cart: [
-            ...state.cart,
-            state.details.find((item) => item.id === action.id),
-          ],
-          id: [...state.id, action.id],
-        };
-      }
-    case REMOVE_FROM_CART:
-      let y = state.details.find((item) => item.id === action.id);
-      state.totalItems -= y.quantity;
-      y.quantity = 1;
-      return {
-        ...state,
-        cart: state.cart.filter((item) => item.id !== action.id),
-        id: state.id.filter((item) => item !== action.id),
-      };
-    case INC_QUANTITY:
-      let x = state.details.find((item) => item.id === action.id);
-      x.quantity += 1;
-      state.totalItems += 1;
-      return {
-        ...state,
-      };
-    case DEC_QUANTITY:
-      let z = state.details.find((item) => item.id === action.id);
-      z.quantity -= 1;
-      state.totalItems -= 1;
-      if (z.quantity === 0) {
-        let a = state.details.find((item) => item.id === action.id);
-        a.quantity += 1;
-        return {
-          ...state,
-          cart: state.cart.filter((item) => item.id !== action.id),
-          id: state.id.filter((item) => item !== action.id),
-        };
-      }
-      return {
-        ...state,
-      };
-
     default:
       return state;
   }

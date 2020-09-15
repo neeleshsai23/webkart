@@ -17,9 +17,9 @@ class Header extends Component {
           </NavLink>
         </div>
         <div className='navitem-right' onClick={this.cartOpen}>
-          {this.props.mobiles.totalItems > 0 && (
+          {this.props.cart.totalItems > 0 && (
             <div className='countdiv'>
-              <span>{this.props.mobiles.totalItems}</span>
+              <span>{this.props.cart.totalItems}</span>
             </div>
           )}
           <a className='navlink cart'>
@@ -34,7 +34,7 @@ class Header extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    mobiles: state.mobiles,
+    cart: state.cart,
   };
 };
 

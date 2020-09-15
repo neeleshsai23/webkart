@@ -11,6 +11,8 @@ import store from './components/store';
 //Routes
 import Home from './components/home';
 import Mobiles from './components/mobiles';
+import Latops from './components/laptops';
+import laptops from './components/laptops';
 
 class App extends Component {
   render() {
@@ -24,6 +26,7 @@ class App extends Component {
               <div>
                 <Route exact path='/' component={Home} />
                 <Route path='/mobiles' component={Mobiles} />
+                <Route path='/laptops' component={laptops} />
               </div>
             </div>
           </div>

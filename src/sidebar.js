@@ -5,7 +5,10 @@ class Sidebar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      categories: [['Mobiles', '/mobiles']],
+      categories: [
+        ['Mobiles', '/mobiles'],
+        ['laptops', '/laptops'],
+      ],
     };
   }
   menuClicked = () => {

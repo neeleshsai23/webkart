@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import { addToCart } from './actions/actions';
 
-class Mobiles extends Component {
+class Laptops extends Component {
   add = (item) => {
     this.props.addToCart(item);
   };
@@ -11,7 +11,7 @@ class Mobiles extends Component {
   render() {
     return (
       <div className='productpage'>
-        {this.props.mobiles.details.map((item, index) => (
+        {this.props.laptops.details.map((item, index) => (
           <div className='products' key={item.name}>
             <div>
               <img className='productimg' src={item.image} />
@@ -48,7 +48,7 @@ class Mobiles extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    mobiles: state.mobiles,
+    laptops: state.laptops,
   };
 };
 
@@ -58,4 +58,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Mobiles);
+export default connect(mapStateToProps, mapDispatchToProps)(Laptops);
